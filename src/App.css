@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
+@import 'reset-css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor: pointer;
+    vertical-align: middle;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.loginTxt{
+    margin-left: 10px;
+}
+.nav-section{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.menu-list{
+    display: flex;
+    margin-top: 30px;
+}
+.menu-list li{
+    padding: 10px;
+}
+.menu-area{
+    display: flex;
+    justify-content: center;
+}
+.searchBox{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.searchBox input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.innerBox{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.product img{
+    width: 100%;
+}
+.cardProduct{
+    margin-bottom: 20px;
+    transition: transform .2s; 
+    cursor: pointer;
+}
+.cardProduct:hover {
+    transform: scale(1.1); 
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .product-img{
+    display: flex;
+    justify-content: flex-end;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
