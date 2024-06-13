@@ -7,7 +7,7 @@ const ProductDetail = () => {
   let{id} = useParams()
   const [product, setProduct] = useState(null)
   const getProductDetail = async() => {
-    let url = `http://localhost:3000/product/${id}`;
+    let url = `https://my-json-server.typicode.com/Beaka0717/react-practice/product/${id}`;
     let response = await fetch(url)
     let data = await response.json()
     setProduct(data)
